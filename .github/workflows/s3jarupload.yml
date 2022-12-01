@@ -19,13 +19,13 @@ jobs:
           java-version: 11
 
       - name: Creating jar for application
-        run: cd servless  && mvn clean && mvn package
+        run: cd serverless  && mvn clean && mvn package
 
       - name: Check jar file created or not
-        run: ls -la && cd servless && cd target && ls -la
+        run: ls -la && cd serverless && cd target && ls -la
 
       - name: Copy jar file to webservice folder
-        run: cp servless/target/csye6225lambda-1.jar ./webservice
+        run: cp serverless/target/csye6225lambda-1.jar ./webservice
 
       - name: switch to webservice folder
         run: cd webservice && ls -la
