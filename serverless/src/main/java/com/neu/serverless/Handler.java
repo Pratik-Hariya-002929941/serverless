@@ -78,4 +78,4 @@ public class Handler implements RequestHandler<SNSEvent, Object> {
         context.getLogger().log("Invocation completed: " + timeStamp);
         return null;
     }
-} 
+}
