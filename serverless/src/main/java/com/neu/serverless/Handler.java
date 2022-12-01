@@ -45,13 +45,13 @@ public class Handler implements RequestHandler<SNSEvent, Object> {
 
         String from = "noreply@" + domainName;
 
-        String link = "http://" + domainName + "/v1/verifyUserEmail?email=" + to + "&token=" + token;
+        String link = "https://" + domainName + "/v1/verifyUserEmail?email=" + to + "&token=" + token;
 
         String message = "Hi " + firstName + ",  \n\n" +
-                "Thank  you for registerign in our application, Please click on the below link to verify your account \n\n" +
+                "Click on the below link to verify your account \n\n" +
                 link + "\n\n\n\n Regards, \n" + domainName + " \n";
 
-        String subject = "Verification Email";
+        String subject = "Email Verification";
 
 
         try {
