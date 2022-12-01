@@ -2,7 +2,7 @@ name: Jar upload and lambda update
 
 on:
   #Trigger the workflow on pull request
-  push:
+  pull_request:
     branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
