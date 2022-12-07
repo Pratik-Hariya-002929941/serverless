@@ -48,7 +48,7 @@ public class Handler implements RequestHandler<SNSEvent, Object> {
         String link = "https://" + domainName + "/v1/verifyUserEmail?email=" + to + "&token=" + token;
 
         String message = "Hi " + firstName + ",  \n\n" +
-                "Below is the verification link \n\n" +
+                "Click below link to verify your account \n\n" +
                 link + "\n\n\n\n Regards, \n" + domainName + " \n";
 
         String subject = "Email Verification";
